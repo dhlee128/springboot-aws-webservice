@@ -11,9 +11,9 @@ cache:
   directories:
     - '$HOME/.m2/repository'
     - '$HOME/.gradle'
-before_install:
-  - chmod +x gradlew
-script: "./gradlew clean build"
+before_script:
+  - chmod +x gradle
+script: "$gradlew clean build"
 
 # deploy 명령어 실행되기 전에 수행
 before_deploy:
